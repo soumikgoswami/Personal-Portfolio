@@ -1,0 +1,56 @@
+/* style.css */
+body {
+    margin: 0;
+    overflow: hidden;
+    font-family: 'Inter', sans-serif;
+    color: #e0e0e0;
+    background-color: #1a1a2e; /* Dark background */
+}
+canvas {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+.content {
+    position: relative;
+    z-index: 1;
+    padding: 2rem;
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: rgba(26, 26, 46, 0.8); /* Semi-transparent background for content */
+    border-radius: 15px;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+h1, h2 {
+    color: #00bcd4; /* Accent color for headings */
+}
+.section-card {
+    background-color: #2a2a4a;
+    border-radius: 10px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out;
+}
+.section-card:hover {
+    transform: translateY(-5px);
+}
+.skill-badge {
+    background-color: #00796b;
+    color: white;
+    padding: 0.4rem 0.8rem;
+    border-radius: 8px;
+    margin: 0.3rem;
+    display: inline-block;
+}
+a {
+    color: #00bcd4;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
