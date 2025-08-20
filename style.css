@@ -251,4 +251,8 @@ button:hover, .explore-button:hover, .submit-button:hover {
 
 #contact-links a:hover svg {
     stroke: #fff;
+
+}
+main {
+    padding-top: 80px; 
 }
