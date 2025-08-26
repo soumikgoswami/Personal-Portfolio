@@ -251,8 +251,89 @@ button:hover, .explore-button:hover, .submit-button:hover {
 
 #contact-links a:hover svg {
     stroke: #fff;
-
 }
+/* Prevent header from overlapping content */
 main {
-    padding-top: 80px; 
+    padding-top: 80px; /* Adjust if your header height changes */
+}
+/* Section spacing for main content containers */
+#projects .page-content-inner,
+#skills .page-content-inner,
+#about .page-content-inner {
+    padding: 2.5rem 2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    box-sizing: border-box;
+}
+
+/* Project cards grid spacing */
+#projects-container {
+    gap: 2rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+@media (min-width: 640px) {
+    #projects-container {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media (min-width: 1024px) {
+    #projects-container {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+/* Skills container spacing */
+#skills-container {
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* About info cards spacing */
+#about .info-card {
+    margin-bottom: 2rem;
+    padding: 2rem 1.5rem;
+}
+
+/* Responsive tweaks for small screens */
+@media (max-width: 640px) {
+    #projects .page-content-inner,
+    #skills .page-content-inner,
+    #about .page-content-inner {
+        padding: 1rem 0.5rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+    #about .info-card {
+        padding: 1rem 0.5rem;
+        margin-bottom: 1rem;
+    }
+    #projects-container,
+    #skills-container {
+        gap: 1rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+}
+/* Home section spacing for main content container */
+#home .page-content-inner {
+    padding: 2.5rem 2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    box-sizing: border-box;
+}
+
+/* Responsive tweaks for small screens */
+@media (max-width: 640px) {
+    #home .page-content-inner {
+        padding: 1rem 0.5rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
 }
